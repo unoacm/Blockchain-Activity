@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Supported Routes</h1>
+        <ul>
+            <li>
+                <h2>/mine</h2>
+                <p>Mines a new block and returns the block</p>
+            </li>
+            <li>
+                <h2>/transactions/new</h2>
+                <h3>Requires:</h3>
+                <pre>
+                    <code>
+                        {
+                            'sender': '&lt;sender address&gt;',
+                            'recipient': '&lt;recipient address&gt;',
+                            'amount': &lt;amount to send&gt;
+                        }
+                    </code>
+                </pre>
+                <p>Makes a new transaction</p>
+            </li>
+            <li>
+                <h2>/chain</h2>
+                <p>Returns the current chain</p>
+            </li>
+            <li>
+                <h2>/nodes/register</h2>
+                <h3>Requires:</h3>
+                <pre>
+                    <code>
+                        {
+                            'nodes': [
+                                '&lt;Node address 1&gt;',
+                                '&lt;Node address 2&gt;',
+                                ...,
+                                '&lt;Node address N&gt;'
+                            ]
+                        }
+                    </code>
+                </pre>
+                <p>Registers new nodes to be part of the blockchain consensus</p>
+            </li>
+            <li>
+                <h2>/nodes/resolve</h2>
+                <p>Attempts to resolve conflicts with registered nodes</p>
+            </li>
+        </ul>
+    </body>
+</html>
